@@ -9,7 +9,7 @@ class Stack {
   }
 
   isFull () {
-    return this.items.length > 0
+    return this.items.length === this.capacity
   }
 
   push (element) {

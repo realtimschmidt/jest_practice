@@ -19,7 +19,7 @@ describe('Stack', () => {
 
   it('should have an isFull function that returns true if the stack is full and false otherwise', () => {
     expect(stack.isFull()).toBe(false)
-    stack.items.push(2)
+    stack.items.push(1, 2, 3)
     expect(stack.isFull()).toBe(true)
   })
 
@@ -33,5 +33,12 @@ describe('Stack', () => {
       let elementPushed = stack.push(2)
       expect(elementPushed).toBe(2)
     })
+
+    // it('should return full if one tries to push at the top of the stack while it is full', () => {
+    //   stack.items = [1, 2, 3]
+    //   let element = stack.push(4)
+    //   expect(stack.items[stack.items.length - 1]).toBe(3)
+    //   expect(element).toBe('Full')
+    // })
   })
 })
