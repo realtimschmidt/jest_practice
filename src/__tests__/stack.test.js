@@ -34,11 +34,11 @@ describe('Stack', () => {
       expect(elementPushed).toBe(2)
     })
 
-    // it('should return full if one tries to push at the top of the stack while it is full', () => {
-    //   stack.items = [1, 2, 3]
-    //   let element = stack.push(4)
-    //   expect(stack.items[stack.items.length - 1]).toBe(3)
-    //   expect(element).toBe('Full')
-    // })
+    it('should return full if one tries to push at the top of the stack while it is full', () => {
+      stack.items = [1, 2, 3]
+      let element = stack.push(4)
+      expect(stack.items[stack.items.length - 1]).toBe(3)
+      expect(element).toBe('Full')
+    })
   })
 })
