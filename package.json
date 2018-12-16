@@ -1,0 +1,15 @@
+{
+  "name": "jest-practice",
+  "version": "1.0.0",
+  "description": "Jest practice project",
+  "main": "sum.js",
+  "author": "Tim Schmidt",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
