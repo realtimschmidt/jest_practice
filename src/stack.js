@@ -16,6 +16,7 @@ class Stack {
     if (this.isFull()) {
       return 'Full'
     }
+    
     this.items.push(element)
     return element
   }
